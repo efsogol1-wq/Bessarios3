@@ -235,7 +235,7 @@ canvas#c { position: fixed; inset: 0; display: block; }
 .h-errs.any { opacity: 1; }
 .h-maint { position: absolute; left: calc(14px + var(--safe-l)); bottom: calc(8px + var(--safe-b)); height: clamp(44px, 10vh, 58px); padding: 0 14px; font-size: clamp(14px, 3.4vh, 19px); letter-spacing: 2px; background: rgba(20, 30, 20, 0.75); border: 2px solid #6a8a5a; }
 .hud.cam-up .h-maint, .hud.panel-up .h-maint, .hud.panel-up .h-cambar { opacity: 0; pointer-events: none; }
-.maint { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; background: rgba(0, 0, 0, 0.55); z-index: 6; }
+.maint { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; background: rgba(0, 0, 0, 0.55); z-index: 6; pointer-events: auto; }
 .mp-box { width: min(86vw, 520px); background: rgba(8, 14, 8, 0.94); border: 2px solid #4a6a4a; padding: 14px 16px; font-family: "VT323", monospace; display: flex; flex-direction: column; gap: 8px; }
 .mp-t { font-size: clamp(22px, 5vh, 30px); color: #9adf9a; letter-spacing: 3px; }
 .mp-box button { display: flex; justify-content: space-between; align-items: center; font-family: "VT323", monospace; font-size: clamp(18px, 4.4vh, 26px); background: rgba(20, 30, 20, 0.85); border: 1px solid #3a5a3a; color: #cfe8cf; padding: 6px 12px; text-align: left; }
@@ -4168,7 +4168,7 @@ varying vec3 vWNor;
         <button class="t-btn" data-act="help">&gt;&gt; How to Play</button>
       </div>
       <div class="t-stars"></div>
-      <div class="t-foot">v1.1 &nbsp;\xB7&nbsp; Bessario Games</div>
+      <div class="t-foot">v1.2 &nbsp;\xB7&nbsp; Bessario Games</div>
       <button class="t-gear" data-act="settings" aria-label="Settings">\u2699</button>`),t.appendChild(this.title),this.title.addEventListener("click",n=>{let i=n.target.closest("[data-act]");i&&(this.audio.play("btn"),this.emit(i.dataset.act))}),this.paper=yn("div","screen paper hidden",`
       <div class="np">
         <div class="np-head">THE DAILY CLARION <span>\xB7  CLASSIFIEDS</span></div>
