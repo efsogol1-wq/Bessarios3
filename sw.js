@@ -1,5 +1,5 @@
-// Offline cache for Five Nights at Bessario's (build 202610170059)
-const CACHE = 'bessarios3-202610170059';
+// Offline cache for Five Nights at Bessario's (build 202610170704)
+const CACHE = 'bessarios3-202610170704';
 const FILES = ['./', './index.html', './manifest.webmanifest', './apple-touch-icon.png', './icon-192.png', './icon-512.png'];
 self.addEventListener('install', (e) => {
   e.waitUntil(caches.open(CACHE).then((c) => c.addAll(FILES)).then(() => self.skipWaiting()));
